@@ -1,0 +1,68 @@
+var myObj, i, x = "";
+
+
+myObj = { 
+   "product":[ 
+   { 
+         "name":"Mk4 Supra",
+         "brand":"Toyota",
+         "description":"Car",
+         "price":"₱960,000.00"
+      },
+      { 
+         "name":"Gtr R34",
+         "brand":"Nissan",
+         "description":"Car",
+         "price":"₱1,680,000.00"
+      },
+      { 
+         "name":"Silvia S15",
+         "brand":"Nissan",
+         "description":"Car",
+         "price":"₱750,000.00"
+      },
+      { 
+         "name":"Gtr R35",
+         "brand":"Nissan",
+         "description":"Car",
+         "price":"₱5,500,000.00"
+      },
+      { 
+         "name":"Acura Nsx",
+         "brand":"Honda",
+         "description":"Car",
+         "price":"₱2,600,000.00"
+      },
+      { 
+         "name":"S2000",
+         "brand":"Honda",
+         "description":"Car",
+         "price":"₱1,550,000.00"
+      },
+      {
+         "name":"Rx7",
+         "brand":"Mazda",
+         "description":"Car",
+         "price":"₱1,600,000.00"
+      },
+      {
+         "name":"350z",
+         "brand":"Nissan",
+         "description":"Car",
+         "price":"₱1,100,000.00"
+      },
+      {
+         "name":"Eclipse",
+         "brand":"Mitsubishi",
+         "description":"Car",
+         "price":"₱960,000.00"
+      }
+   ]
+}
+for (i in myObj.product) {
+  x += "<div>" + myObj.product[i].name+ "<br>" + myObj.product[i].brand + "<br>" + myObj.product[i].price+"</div>";
+
+
+
+}
+document.getElementById("demo").innerHTML = x;
